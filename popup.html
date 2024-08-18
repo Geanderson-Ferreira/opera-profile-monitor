@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+    min-width: 350px;
+    padding: 10px;
+    max-height: 100px; /* Define a altura máxima do corpo */
+    overflow-y: auto;  /* Adiciona uma barra de rolagem vertical quando necessário */
+    margin: 0; 
+        }
+        .data-field {
+            margin-bottom: 10px;
+        }
+        .label {
+            font-weight: bold;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Adicionando estilo ao cabeçalho */
+        thead th {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+
+
+
+    </style>
+</head>
+<body id="popup">
+
+    <div >
+        <h3 id="hotel_id">
+               Hotel: 
+        </h3>
+    </div>   
+
+    <table id="reservaTable">
+        <thead>
+            <tr>
+                <th>Confirmation ID</th>
+                <th>Descricao do Erro</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="popup.js"></script>
+</body>
+</html>
